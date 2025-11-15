@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz Application - Admin Login</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="admin-login.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ONLINE QUIZ APPLICATION</h1>
+    <form onsubmit="return showMessage(event)">
+      <div class="row">
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="Enter Username" required>
+      </div>
+
+      <div class="row">
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter Password" required>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function showMessage(event) {
+      event.preventDefault(); // prevent page reload
+      alert("Login successfully!");
+      return false;
+    }
+  </script>
+</body>
+</html>
